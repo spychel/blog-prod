@@ -1,0 +1,14 @@
+{
+  "lang": "Русский",
+  "not-found-page": {
+    "not-found": "Страница не найдена"
+  },
+  "error-page": {
+    "error-message": "Произошла непредвиденная ошибка",
+    "reload-page": "Обновить страницу"
+  },
+  "navbar": {
+    "main-link": "Главная",
+    "about-link": "О нас"
+  }
+}

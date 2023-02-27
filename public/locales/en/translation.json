@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "about-link": "About Us",
+    "main-link": "home"
+  },
+  "lang": "Russian",
+  "error-page": {
+    "error-message": "An unexpected error has occurred",
+    "reload-page": "Refresh the page"
+  },
+  "not-found-page": {
+    "not-found": "Page not found"
+  }
+}
