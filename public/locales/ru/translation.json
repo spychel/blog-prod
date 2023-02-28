@@ -10,5 +10,6 @@
   "navbar": {
     "main-link": "Главная",
     "about-link": "О нас"
-  }
+  },
+  "throw-error": "Имитировать ошибку"
 }

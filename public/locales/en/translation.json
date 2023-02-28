@@ -10,5 +10,6 @@
   },
   "not-found-page": {
     "not-found": "Page not found"
-  }
+  },
+  "throw-error": "Simulate error"
 }
