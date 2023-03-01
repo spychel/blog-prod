@@ -1,8 +1,6 @@
 {
   "lang": "Русский",
-  "not-found-page": {
-    "not-found": "Страница не найдена"
-  },
+  "not-found-page": "Страница не найдена",
   "error-page": {
     "error-message": "Произошла непредвиденная ошибка",
     "reload-page": "Обновить страницу"

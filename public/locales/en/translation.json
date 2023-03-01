@@ -8,8 +8,6 @@
     "error-message": "An unexpected error has occurred",
     "reload-page": "Refresh the page"
   },
-  "not-found-page": {
-    "not-found": "Page not found"
-  },
+  "not-found-page": "Page not found",
   "throw-error": "Simulate error"
 }
