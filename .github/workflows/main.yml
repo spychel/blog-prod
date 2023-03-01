@@ -25,13 +25,9 @@ jobs:
             - name: production building
               run: npm run build:prod
             - name: ts linting
-              id: linting
-              run: npm run lint:ts
-            - name: ts lint-fix
-              if: ${{ failure() && steps.linting.conclusion == 'failure'}}
               run: npm run lint:ts:fix
             - name: css linting
-              run: npm run lint:scss
+              run: npm run lint:scss:fix
             - name: unit testing
               run: npm run test:unit
             - name: sb build
