@@ -25,7 +25,11 @@ jobs:
             - name: production building
               run: npm run build:prod
             - name: ts linting
+              id: linting
               run: npm run lint:ts
+            - name: ts lint-fix
+              if: ${{ failure() && steps.linting.conclusion == 'failure'}}
+              run: npm run lint:ts:fix
             - name: css linting
               run: npm run lint:scss
             - name: unit testing
@@ -40,13 +44,13 @@ jobs:
               if: ${{ failure() && steps.screenshots.conclusion == 'failure'}}
               run: 
                 date > generated.txt
-                git config user.name github-actions
-                git config user.email github-actions@github.com
-                git add -f .loki/difference
-                git add .
-                git checkout -b save-screenshots
-                git commit -am "screenshots failure"
-                git push -f origin save-screenshots
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com
+                  git add -f .loki/difference
+                  git add .
+                  git checkout -b save-screenshots
+                  git commit -am "screenshots failure"
+                  git push -f origin save-screenshots
             
             
             
