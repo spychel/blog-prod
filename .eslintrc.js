@@ -43,7 +43,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to', 'data-testid'] }],
         'max-len': ['error', { ignoreComments: true, code: 110 }],
-        'linebreak-style': ['error', 'unix'],
+        'linebreak-style': ['error', 'windows'],
     },
     ignorePatterns: ['.eslintrc.js', 'config/storybook/*'],
     globals: {
