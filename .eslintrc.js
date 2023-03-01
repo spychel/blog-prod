@@ -45,6 +45,7 @@ module.exports = {
         'max-len': ['error', { ignoreComments: true, code: 110 }],
         'linebreak-style': ['error', 'windows'],
     },
+    ignorePatterns: ['.eslintrc.js', 'config/storybook/*'],
     globals: {
         __IS_DEV__: true,
     },
