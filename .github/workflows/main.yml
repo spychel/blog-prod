@@ -11,7 +11,9 @@ jobs:
         strategy:
             matrix:
                 node-version: [16.x]
-
+        permissions:
+          contents: write
+          pull-request: write
         steps:
             - uses: actions/checkout@v2
             - name: Staring Node.js ${{matrix.node-version}}
@@ -31,7 +33,20 @@ jobs:
             - name: sb build
               run: npm run storybook:build
             - name: screenshot testing
+              if: always()
+              id: screenshots
               run: npm run test:ui:ci
+            - name: after
+              if: ${{ failure() && steps.screenshots.conclusion == 'failure'}}
+              run: /
+                date > generated.txt
+                git config user.name github-actions
+                git config user.email github-actions@github.com
+                git add -f .loki/difference
+                git add .
+                git checkout -b save-screenshots
+                git commit -am "screenshots failure"
+                git push -f origin save-screenshots
             
             
             
