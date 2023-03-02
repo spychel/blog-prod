@@ -3,3 +3,4 @@ node_modules
 .vscode
 extractedTranslations
 /storybook-static
+/.loki/report.*
