@@ -9,5 +9,6 @@
     "main-link": "Главная",
     "about-link": "О нас"
   },
-  "throw-error": "Имитировать ошибку"
+  "throw-error": "Имитировать ошибку",
+  "lang-short": "Ru"
 }

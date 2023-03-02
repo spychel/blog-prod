@@ -1,7 +1,7 @@
 {
   "navbar": {
     "about-link": "About Us",
-    "main-link": "home"
+    "main-link": "Home"
   },
   "lang": "English",
   "error-page": {
@@ -9,5 +9,6 @@
     "reload-page": "Refresh the page"
   },
   "not-found-page": "Page not found",
-  "throw-error": "Simulate error"
+  "throw-error": "Simulate error",
+  "lang-short": "En"
 }

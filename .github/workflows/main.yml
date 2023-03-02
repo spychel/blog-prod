@@ -26,14 +26,18 @@ jobs:
               run: npm run build:prod
             - name: ts linting
               run: npm run lint:ts
+              if: always
             - name: css linting
               run: npm run lint:scss
+              if: always
             - name: unit testing
               run: npm run test:unit
+              if: always
             - name: sb build
               run: npm run storybook:build
+              if: always
             - name: screenshot testing
               run: npm run test:ui:ci
-            
+              if: always
             
             

@@ -14,7 +14,7 @@ export default {
 const Template: ComponentStory<typeof Sidebar> = (args) => <Sidebar {...args} />;
 
 export const Light = Template.bind({});
-Light.decorators = [];
+Light.decorators = [ThemeDecorator(Theme.LIGHT)];
 Light.args = {
 
 };
