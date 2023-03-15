@@ -12,5 +12,7 @@
   "throw-error": "Simulate error",
   "lang-short": "En",
   "Log_In": "Log in",
-  "filler": "Amet ullamco deserunt laborum labore magna"
+  "filler": "Amet ullamco deserunt laborum labore magna",
+  "decrement": "Decrease",
+  "increment": "Increase"
 }

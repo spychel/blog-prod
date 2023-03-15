@@ -47,8 +47,8 @@ module.exports = {
         'linebreak-style': ['error', 'unix'],
         'jsx-a11y/click-events-have-key-events': 'off',
         'jsx-a11y/no-static-element-interactions': 'off',
-        "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
-        "react-hooks/exhaustive-deps": "error" // Checks effect dependencies
+        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
     },
     ignorePatterns: ['.eslintrc.js', 'config/storybook/*'],
     globals: {
@@ -65,6 +65,12 @@ module.exports = {
             files: ['**/src/**/*.stories.{ts,tsx}'],
             rules: {
                 'react/jsx-props-no-spreading': 'off',
+            },
+        },
+        {
+            files: ['**/src/**/*Slice.{ts,tsx}'],
+            rules: {
+                'no-param-reassign': 'off',
             },
         },
     ],
