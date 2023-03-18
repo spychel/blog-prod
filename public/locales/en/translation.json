@@ -14,5 +14,7 @@
   "Log_In": "Log in",
   "filler": "Amet ullamco deserunt laborum labore magna",
   "decrement": "Decrease",
-  "increment": "Increase"
+  "increment": "Increase",
+  "enter_login": "Enter username",
+  "enter_pswd": "Enter password"
 }

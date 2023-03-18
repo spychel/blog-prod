@@ -42,7 +42,7 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to', 'data-testid'] }],
+        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to', 'data-testid', 'placeholder'] }],
         'max-len': ['error', { ignoreComments: true, code: 110 }],
         'linebreak-style': ['error', 'unix'],
         'jsx-a11y/click-events-have-key-events': 'off',

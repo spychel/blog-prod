@@ -12,6 +12,7 @@ interface ModalProps {
     isOpen?: boolean;
     onClose?: () => void;
     container?: HTMLElement;
+    lazy?: boolean;
 }
 
 const ANIMATION_DELAY = 300;
@@ -23,11 +24,13 @@ export const Modal = (props: ModalProps) => {
         isOpen,
         onClose,
         container,
+        lazy,
     } = props;
 
     const { theme } = useTheme();
 
     const [isClosing, setIsClosing] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
 
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
@@ -35,6 +38,12 @@ export const Modal = (props: ModalProps) => {
         [cls.opened]: isOpen,
         [cls.isClosing]: isClosing,
     };
+
+    useEffect(() => {
+        if (isOpen) {
+            setIsMounted(true);
+        }
+    }, [isOpen]);
 
     const onContentClick = (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -66,6 +75,10 @@ export const Modal = (props: ModalProps) => {
             window.removeEventListener('keydown', onKeyDown);
         };
     }, [isOpen, onKeyDown]);
+
+    if (lazy && !isMounted) {
+        return null;
+    }
 
     return (
         <Portal container={container}>
