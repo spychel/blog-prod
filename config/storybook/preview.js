@@ -32,6 +32,6 @@ export const globalTypes = {
 
 
 addDecorator(StyleDecorator);
-addDecorator(RouterDecorator());
+addDecorator(I18nDecorator);
 addDecorator(ThemeDecorator(Theme.LiGHT));
-//addDecorator(I18nDecorator());
+addDecorator(RouterDecorator());

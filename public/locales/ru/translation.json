@@ -16,5 +16,8 @@
   "decrement": "Уменьшить",
   "increment": "Увеличить",
   "enter_login": "Введите username",
-  "enter_pswd": "Введите пароль"
+  "enter_pswd": "Введите пароль",
+  "auth_form": "Форма авторизации",
+  "fail_login": "Неверные данные для входа",
+  "Log_out": "Выйти"
 }

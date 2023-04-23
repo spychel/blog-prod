@@ -16,5 +16,8 @@
   "decrement": "Decrease",
   "increment": "Increase",
   "enter_login": "Enter username",
-  "enter_pswd": "Enter password"
+  "enter_pswd": "Enter password",
+  "auth_form": "Authorization form",
+  "fail_login": "Incorrect login credentials",
+  "Log_out": "Log out"
 }

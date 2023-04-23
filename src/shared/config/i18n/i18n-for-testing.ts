@@ -6,7 +6,9 @@ i18n
     .init({
         lng: 'ru',
         fallbackLng: 'ru',
-
+        react: {
+            useSuspense: false,
+        },
         interpolation: {
             escapeValue: false, // not needed for react!!
         },
