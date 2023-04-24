@@ -16,6 +16,7 @@ export function createReducerManager(initialReducers: ReducersMapObject<StateSch
         reduce: (state: StateSchema, action: AnyAction) => {
             if (keysToRemove.length > 0) {
                 keysToRemove.forEach((key) => {
+                    // eslint-disable-next-line no-param-reassign
                     delete state[key];
                 });
                 keysToRemove = [];
